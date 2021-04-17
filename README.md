@@ -103,6 +103,27 @@ A location based community app where users can chat or meetup with other users i
 ### Models
 [Add table of models]
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
+   - Login Screen
+      - (Create/GET) Create an account
+      ```Android
+      {
+      public void createUser() {
+      ParseUser user = new ParseUser();
+      user.setUsername("my name");
+      user.setPassword("my pass");
+      user.setEmail("email@example.com");
+      }
+      ```
+         
+   - Home Feed Screen
+      - (Read/GET) Query all posts where user is author
+      - (Create/POST) Create a new like on a post
+      - (Delete) Delete existing like
+      - (Create/POST) Create a new comment on a post
+      - (Delete) Delete existing comment
+   Create Post Screen
+      - (Create/POST) Create a new post object
+   Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
