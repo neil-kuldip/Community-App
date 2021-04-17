@@ -99,9 +99,49 @@ A location based community app where users can chat or meetup with other users i
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+
+#### User
+
+|   Property    | Type    | Description            |
+| ------------- | ------- | ---------------------- |
+| objectId      | String  | unique id for the user account (default field) |
+| emailVerified | Boolean | determines if the email address exists |
+| username      | String  | username the user chose for the account |
+| createdAt     | DateTime | date when user account was created (default field) | 
+| password      | String  | password the user chose for their account |
+| email         | String | email address the user supplied when creating the account |
+| interestList  | Array  | array stores interests pointers chosen by user |
+| location | GeoPoint | stores the user's current location |
+
+#### Interests
+
+| Property | Type     | Description |
+| -------- | -------- | --------    |
+| objectId | String   | unique id for the interest label (default field) |
+| createdAt | Date    | date when label was created and added to list of labels (default field) |
+| usersInterested | Array | array that stores pointers to user accounts when users choose the interest for their profiles |
+| screenName | String | interest name (*this should follow standard capitalization for the interest*) |
+| name | String | interest name (*should always be lowercase*) |
+
+#### Chat
+
+| Property | Type     | Description |
+| -------- | -------- | --------    |
+| objectId | String   | unique id for the conversation formed with two unique users (default field) |
+| createdAt | Date | date when the coversation was first generated (default field) |
+| messageList | Array | array of messages between 2 users - **ordered by oldest first** |
+| users      | Array | array that stores pointers to user accounts involved in this chat |
+
+#### Message
+
+| Property | Type | Description |
+| -------- | -------- | -------- |
+| objectId | String   | unique id for the text bubble created by user's text message (default field) |
+| createdAt | Date | date when the message was sent (default field) |
+| user | Pointer | user who created the message | 
+| textMessage | String | message that the user sent |
+
 ### Networking
    - Login Screen
       - (Create/GET) Create an account
