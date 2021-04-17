@@ -21,7 +21,7 @@ A location based community app where users can chat or meetup with other users i
 - **Category:** Social, Lifestyle
 - **Mobile:** This app would be developed primarily for Android devices.
 - **Story:** The app functions as a social medium for nearby people in a local community to be matched by common interests to communicate and become friends. Users can choose their top three interests and the radius of proximity for matching. However, the catch is that the AI decides who that person is paired to but the user decides whether to continue the conversation.
-- **Market:** All age groups. Some chats may be unavailable under age 18.
+- **Market:** For ages 18+.
 - **Habit:** The app can be used daily at any time of the day. There will be notifications for the user if there are responses from the chats.
 - **Scope:** First we have our users create accounts and that will direct them to choose their top three interests. Afterwards, they will choose the proximity in miles from their location. From there, whether they choose to close the app or not, they will get a notification when they are matched to another user. This will take them to a chat with the other user to communicate.
 
