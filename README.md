@@ -206,6 +206,43 @@ A location based community app where users can chat or meetup with other users i
        }
       ```
    - Profile Screen
-      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user interests
+         ``` 
+         public void changeInterest(ParseUser user, Interest oldInterest, Interest newInterest) {
+           if (user != null) {
+            user.removeInterest(oldInterest);
+            user.addInterest(newInterest);
+
+             // Saves the object.
+             user.saveInBackground(e -> {
+               if(e==null){
+                 //Save successfull
+                 Toast.makeText(this, "User interests updated", Toast.LENGTH_SHORT).show();
+               }else{
+                 // Something went wrong while saving
+                 Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+               }
+             });
+           }
+         }
+         ```
       - (Update/PUT) Update user profile image
+          ``` 
+         public void updateProfileImage(ParseUser user, ImageFile image) {
+              if (user != null) {
+               user.setProfileImage(image);
+
+             // Saves the object.
+             user.saveInBackground(e -> {
+               if(e==null){
+                 //Save successfull
+                 Toast.makeText(this, "Profile image updated", Toast.LENGTH_SHORT).show();
+               }else{
+                 // Something went wrong while saving
+                 Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+               }
+             });
+           }
+         }
+         ```
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
