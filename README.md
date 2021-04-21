@@ -108,7 +108,6 @@ A location based community app where users can chat or meetup with other users i
 | objectId      | String  | unique id for the user account (default field) |
 | emailVerified | Boolean | determines if the email address exists |
 | username      | String  | username the user chose for the account |
-| profileImage  | File    | image file user chose for their account |
 | createdAt     | DateTime | date when user account was created (default field) | 
 | password      | String  | password the user chose for their account |
 | email         | String | email address the user supplied when creating the account |
@@ -155,8 +154,57 @@ A location based community app where users can chat or meetup with other users i
       ```     
    - Chat Screen
       - (Read/GET) Query all chats where user is author
+      ```android
+      // The query will search for a ParseObject, given its objectId.
+     // When the query finishes running, it will invoke the GetCallback
+     // with either the object, or the exception thrown
+     query.getInBackground("<PARSE_OBJECT_ID>", (object, e) -> {
+           if (e == null) {
+           //Object was successfully retrieved
+         } else {
+           // something went wrong
+           Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+         }  
+     });
+      ```
       - (Delete) Delete existing chat
+      ```android
+         // Retrieve the object by id
+     query.getInBackground("<PARSE_OBJECT_ID>", (object, e) -> {
+       if (e == null) {
+         //Object was fetched
+         //Deletes the fetched ParseObject from the database
+         object.deleteInBackground(e2 -> {
+             if(e2==null){
+                 Toast.makeText(this, "Delete Successful", Toast.LENGTH_SHORT).show();
+             }else{
+                 //Something went wrong while deleting the Object
+                 Toast.makeText(this, "Error: "+e2.getMessage(), Toast.LENGTH_SHORT).show();
+             }
+         });
+       }else{
+         //Something went wrong
+         Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+       }
+     });
+      ```
       - (Create/POST) Create a new chat object
+      ```android
+      ParseObject entity = new ParseObject("Chat");
+
+     entity.put("messagesList", new JSONArray());
+     entity.put("users", new JSONArray());
+
+     // Saves the new object.
+     // Notice that the SaveCallback is totally optional!
+     entity.saveInBackground(e -> {
+       if (e==null){
+         //Save was done
+       }else{
+         //Something went wrong
+         Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
+       }
+      ```
    - Profile Screen
       - (Read/GET) Query logged in user object
       - (Update/PUT) Update user profile image
