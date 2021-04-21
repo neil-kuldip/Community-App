@@ -108,6 +108,7 @@ A location based community app where users can chat or meetup with other users i
 | objectId      | String  | unique id for the user account (default field) |
 | emailVerified | Boolean | determines if the email address exists |
 | username      | String  | username the user chose for the account |
+| profileImage  | File    | image file user chose for their account |
 | createdAt     | DateTime | date when user account was created (default field) | 
 | password      | String  | password the user chose for their account |
 | email         | String | email address the user supplied when creating the account |
