@@ -1,4 +1,4 @@
-package com.codepath.example.myapplication;
+package com.codepath.example.community;
 
 import org.junit.Test;
 
