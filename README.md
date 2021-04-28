@@ -94,6 +94,10 @@ A location based community app where users can chat or meetup with other users i
 
 <img src="wireframe.png" width=600>
 
+Here's a walkthrough of implemented user stories:
+
+<img src='walkthrough_sprint1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
