@@ -31,13 +31,13 @@ A location based community app where users can chat or meetup with other users i
 
 **Required Must-have Stories**
 
-* User can login
-* User can register an account
-* User can make a profile
-* Chats - matched by interests
-* An interests tab
-    * 3 column boxes w/ popular interests & search bar to find specific interests
-    * name of interest + photo from google images of that interest? - should be found automatically
+- [x] User can login
+- [ ] User can register an account
+- [ ] User can make a profile
+- [ ] Chats - matched by interests
+- [ ] An interests tab
+    - [ ] 3 column boxes w/ popular interests & search bar to find specific interests
+    - [ ] name of interest + photo from google images of that interest? - should be found automatically
 * ...
 
 **Optional Nice-to-have Stories**
@@ -93,6 +93,10 @@ A location based community app where users can chat or meetup with other users i
 ## Wireframes
 
 <img src="wireframe.png" width=600>
+
+Here's a walkthrough of implemented user stories:
+
+<img src='walkthrough_sprint1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### [BONUS] Digital Wireframes & Mockups
 
