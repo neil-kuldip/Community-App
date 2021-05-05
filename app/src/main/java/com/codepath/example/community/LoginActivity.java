@@ -20,6 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText etUsername;
     private EditText etPassword;
     private Button btnLogin;
+    private Button btnRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         // 3 Things in the LoginActivity: username and password text box and login button
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
+        btnRegister = findViewById(R.id.btnRegister);
         btnLogin = findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +43,24 @@ public class LoginActivity extends AppCompatActivity {
                 loginUser(username, password);
             }
         });
+        btnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(TAG, "onClick register button");
+                //TODO: Make interest page
+                //TODO: Complete register page
+                gotoRegister();
+            }
+        });
+    }
+
+    private void gotoRegister() {
+        Intent i = new Intent(this, RegisterActivity.class);
+        startActivity(i);
+
+        // Closes login activity after login succeeded
+        // After registration complete, takes new user to MainActivity
+        finish();
     }
 
     private void loginUser(String username, String password) {
