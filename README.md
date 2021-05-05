@@ -32,7 +32,7 @@ A location based community app where users can chat or meetup with other users i
 **Required Must-have Stories**
 
 - [x] User can login
-- [ ] User can register an account
+- [x] User can register an account
 - [ ] User can make a profile
 - [ ] Chats - matched by interests
 - [ ] An interests tab
@@ -98,7 +98,7 @@ Here's a walkthrough of implemented user stories:
 
 <img src='walkthrough_sprint1.gif' title='Sprint 1' width='' alt='Video Walkthrough' />
 
-<img src='walkthrough_sprint2.gif' title='Sprint 2' width='' alt='Video Walkthrough' />
+<img src='walkthroughp_sprint2.gif' title='Sprint 2' width='' alt='Video Walkthrough' />
 
 ### [BONUS] Digital Wireframes & Mockups
 
