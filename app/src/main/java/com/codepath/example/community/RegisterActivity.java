@@ -2,6 +2,7 @@ package com.codepath.example.community;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,10 +13,10 @@ import com.parse.ParseUser;
 public class RegisterActivity extends AppCompatActivity {
 
     public static final String TAG = "RegisterActivity";
-    public EditText etNewUsername;
-    public EditText etNewPassword;
-    public EditText etNewEmail;
-    public Button btnCreateAccount;
+    private EditText etNewUsername;
+    private EditText etNewPassword;
+    private EditText etNewEmail;
+    private Button btnCreateAccount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class RegisterActivity extends AppCompatActivity {
         etNewUsername = findViewById(R.id.etNewUsername);
         etNewPassword = findViewById(R.id.etNewPassword);
         etNewEmail = findViewById(R.id.etNewEmail);
+        btnCreateAccount = findViewById(R.id.btnCreateAccount);
         btnCreateAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,6 +39,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
 
+
     public void createUser(String newUsername, String newPassword, String newEmail) {
         ParseUser user = new ParseUser();
         user.setUsername(newUsername);
@@ -45,4 +48,8 @@ public class RegisterActivity extends AppCompatActivity {
 
         //Sends user to interest page
         //TODO: Create interest page
-    }}
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+        finish();
+    }
+}
