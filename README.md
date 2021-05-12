@@ -1,10 +1,10 @@
-# Community-App
+# Rooted
 App created by: Lucas Goldman, Neil Kuldip, Ambonique Thomas
 
 Original App Design Project - README Template
 ===
 
-# Community App
+# Rooted
 
 ## Table of Contents
 1. [Overview](#Overview)
