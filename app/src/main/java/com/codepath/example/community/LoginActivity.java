@@ -87,7 +87,7 @@ public class LoginActivity extends AppCompatActivity {
     private void goMainActivity() {
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
-
+        overridePendingTransition(R.anim.zoom_in, R.anim.slide_up);
         // Closes login activity after login succeeded
         finish();
     }
