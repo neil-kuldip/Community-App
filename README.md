@@ -100,6 +100,8 @@ Here's a walkthrough of implemented user stories:
 
 <img src='walkthrough_sprint2.gif' title='Sprint 2' width='' alt='Video Walkthrough' />
 
+<img src='walkthrough_sprint3.gif' title='Sprint 2' width='' alt='Video Walkthrough' />
+
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
