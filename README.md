@@ -32,7 +32,7 @@ A location based community app where users can chat or meetup with other users i
 **Required Must-have Stories**
 
 - [x] User can login
-- [ ] User can register an account
+- [x] User can register an account
 - [ ] User can make a profile
 - [ ] Chats - matched by interests
 - [ ] An interests tab
