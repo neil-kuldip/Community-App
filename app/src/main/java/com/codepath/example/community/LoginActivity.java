@@ -2,6 +2,8 @@ package com.codepath.example.community;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.transition.Slide;
+import android.transition.TransitionInflater;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -13,7 +15,6 @@ import com.parse.ParseException;
 import com.parse.ParseUser;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 public class LoginActivity extends AppCompatActivity {
 
     public static final  String TAG = "LoginActivity";
@@ -57,7 +58,7 @@ public class LoginActivity extends AppCompatActivity {
     private void gotoRegister() {
         Intent i = new Intent(this, RegisterActivity.class);
         startActivity(i);
-
+        overridePendingTransition(R.anim.fade_in,R.anim.slide_out_left);
         // Closes login activity after login succeeded
         // After registration complete, takes new user to MainActivity
         finish();
