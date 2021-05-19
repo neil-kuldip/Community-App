@@ -1,10 +1,10 @@
-# Community-App
+# Rooted
 App created by: Lucas Goldman, Neil Kuldip, Ambonique Thomas
 
 Original App Design Project - README Template
 ===
 
-# Community App
+# Rooted
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -99,6 +99,8 @@ Here's a walkthrough of implemented user stories:
 <img src='walkthrough_sprint1.gif' title='Sprint 1' width='' alt='Video Walkthrough' />
 
 <img src='walkthrough_sprint2.gif' title='Sprint 2' width='' alt='Video Walkthrough' />
+
+<img src='walkthrough_sprint3.gif' title='Sprint 2' width='' alt='Video Walkthrough' />
 
 ### [BONUS] Digital Wireframes & Mockups
 
