@@ -34,7 +34,8 @@ A location based community app where users can chat or meetup with other users i
 - [x] User can login
 - [x] User can register an account
 - [ ] User can make a profile
-- [ ] Chats - matched by interests
+- [x] Chats - 
+    - [ ] matched by interests
 - [ ] An interests tab
     - [ ] 3 column boxes w/ popular interests & search bar to find specific interests
     - [ ] name of interest + photo from google images of that interest? - should be found automatically
