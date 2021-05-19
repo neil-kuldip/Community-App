@@ -22,6 +22,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText etPassword;
     private Button btnLogin;
     private Button btnRegister;
+    private Button btnTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.etPassword);
         btnRegister = findViewById(R.id.btnRegister);
         btnLogin = findViewById(R.id.btnLogin);
+        btnTest = findViewById(R.id.btnTest);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,6 +55,19 @@ public class LoginActivity extends AppCompatActivity {
                 gotoRegister();
             }
         });
+        btnTest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(TAG, "onClick register button");
+                gotoChat();
+            }
+        });
+    }
+
+    private void gotoChat() {
+        Intent i = new Intent(this, ChatActivity.class);
+        startActivity(i);
+        finish();
     }
 
     private void gotoRegister() {
