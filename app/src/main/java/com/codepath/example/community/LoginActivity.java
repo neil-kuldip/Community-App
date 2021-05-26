@@ -94,7 +94,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
                 Log.i(TAG, username + " successfully logged in!");
                 Toast.makeText(LoginActivity.this, "Success!", Toast.LENGTH_SHORT).show();
-                goMainActivity();
+                gotoChat();
             }
         });
     }
