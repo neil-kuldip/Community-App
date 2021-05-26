@@ -1,67 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_Login"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_margin="16dp"
+    android:background="@drawable/background"
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
-    <ImageView
-        android:id="@+id/ivBanner"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_marginTop="50dp"
-        android:layout_weight="3"
-        app:srcCompat="@drawable/not_alone_foreground" />
-
-    <EditText
-        android:id="@+id/etUsername"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_weight="3"
-        android:ems="10"
-        android:hint="Username" />
-
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_marginTop="15dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword" />
-
     <Button
         android:id="@+id/btnLogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="228dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginStart="80dp"
+        android:background="@drawable/rounded_corners"
         android:text="LOGIN" />
 
     <Button
         android:id="@+id/btnRegister"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
+        android:layout_width="252dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="176dp"
+        android:layout_marginStart="78dp"
+        android:background="@drawable/rounded_corners"
         android:text="REGISTER" />
 
     <Button
         android:id="@+id/btnTest"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="3"
+        android:layout_width="254dp"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="113dp"
+        android:layout_marginStart="80dp"
+        android:background="@drawable/rounded_corners"
         android:text="Test Chat" />
 
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etUsername"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="278dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="35dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
 
-</LinearLayout>
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="304dp"
+        android:hint="Username" />
+
+
+</RelativeLayout>
